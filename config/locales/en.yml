@@ -6,6 +6,11 @@ en:
     welcomeF: "This is the home page for the"
     welcomeB: "sample application"
 
+  message:
+    not_activ: "Account not activated. "
+    check_mail: "Check your email for the activation link."
+    invalid: "Invalid email/password combination"
+
   help_page:
     help: "Help"
     link_help: "Rails Tutorial help section"
@@ -25,10 +30,19 @@ en:
     error: "error"
 
   users:
+    delete: "User deleted"
+    users: "Users"
     log_in: "Log in"
+    log_out: "Log out"
     new_user: "New user"
     sign_up: "Sign up"
     page_for_new_user: "Page for new user"
+    profile: "Profile"
+    setting: "Settings"
+    change: "change"
+    all_users: "All users"
+    profile_updated: "Profile updated"
+    please_login: "Please log in."
 
   views:
     hello: "Hello world"
@@ -37,3 +51,35 @@ en:
     news: "News"
     home: "Home"
     help: "Help"
+
+  remember_me:
+    remember: "Remember me on this computer "
+
+  password:
+    forgot: "Forgot password"
+    mail_reset: "Email sent with password reset instructions"
+    mail_not_found: "Email address not found"
+    reset_password: "Reset password"
+    update: "Update password"
+    confirmation: "Confirmation"
+    success: "Password has been reset."
+    not_empty: "can't be empty"
+    password_expired: "Password reset has expired."
+
+  post:
+    posted: "Posted"
+    ago: "ago."
+    microposts: "Microposts"
+    microposts_created: "Micropost created!"
+    new_microposts: "Compose new micropost..."
+    micropost_feed: "Micropost Feed"
+    micropost_deleted: "Micropost deleted"
+    you_sure: "You sure?"
+    max_picture: "should be less than 5MB"
+    alert_picture: "Maximum file size is 5MB. Please choose a smaller file."
+
+  follow:
+    following: "following"
+    follower: "followers"
+    follow: "follow"
+    unfollow: "unfollow"
