@@ -32,6 +32,7 @@ en:
 
   users:
     delete: "User deleted"
+    cant_delete: "User can't deleted"
     users: "Users"
     log_in: "Log in"
     log_out: "Log out"
@@ -44,6 +45,7 @@ en:
     all_users: "All users"
     profile_updated: "Profile updated"
     please_login: "Please log in."
+    you_sure: "You sure?"
 
   views:
     hello: "Hello world"
@@ -66,6 +68,7 @@ en:
     success: "Password has been reset."
     not_empty: "can't be empty"
     password_expired: "Password reset has expired."
+    save: "Save changes"
 
   post:
     posted: "Posted"
