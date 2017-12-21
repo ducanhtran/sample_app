@@ -26,11 +26,34 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "home.welcome"
+      UserMailer.account_activation(@user).deliver_now
+      flash[:info] = t "message.check_mail"
+      redirect_to root_url
+    else
+      render :new
+    end
+  end
+
+  def edit;  end
+
+  def update
+    @user = User.find_by(id: params[:id])
+    if @user.update_attributes user_params
+      flash[:success] = t "users.profile_updated"
       redirect_to @user
     else
-      render "new"
+      render :edit
+    end
+  end
+
+  def destroy
+    @user = User.find_by(id: params[:id]) or redirect_to "/404"
+    if @user.destroy
+      flash[:success] = t "users.delete"
+      redirect_to users_url
+    else
+      flash[:success] = t "users.cant_delete"
+      redirect_to users_url
     end
   end
 
@@ -72,10 +95,10 @@ class UsersController < ApplicationController
 
     def correct_user
       @user = User.find_by id: params[:id]
-      redirect_to(root_url) unless current_user? @user
+      redirect_to root_url unless current_user? @user
     end
 
     def verify_admin
-      redirect_to(root_url) unless current_user.admin?  
+      redirect_to root_url unless current_user.admin?  
     end
 end

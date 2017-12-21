@@ -19,6 +19,8 @@
       <%= f.submit t("users.log_in"), class: "btn btn-primary" %>
 
     <% end %>
-    <p>New user? <%= link_to t("users.sign_up"), signup_path %></p>
+    
+    <p><%= t "users.new_user" %>
+      <%= link_to t("users.sign_up"), signup_path %></p>
   </div>
 </div>
