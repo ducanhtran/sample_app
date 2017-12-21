@@ -19,10 +19,17 @@ class UsersController < ApplicationController
   end
 
   private
+<<<<<<< 1b3dea2e64ca7faded8ce980f62784f40469d340
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
         :password_confirmation)
     end
 
+=======
+  def user_params
+    params.require(:user).permit(:name, :email, :password,
+                                :password_confirmation)
+  end
+>>>>>>> Chapter 7: Finish user signup
 end
