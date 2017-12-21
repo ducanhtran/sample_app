@@ -1,33 +1,85 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  home:
+    home: "Home"
+    welcome_to: "Welcome to the Sample App"
+    sample_app: "Sample app"
+    welcome: "This is the home page for the Ruby on Rails Tutorial sample application."
+    welcomeF: "This is the home page for the"
+    welcomeB: "sample application"
+
+  message:
+    not_activ: "Account not activated. "
+    check_mail: "Check your email for the activation link."
+    invalid: "Invalid email/password combination"
+
+  help_page:
+    help: "Help"
+    link_help: "Rails Tutorial help section"
+
+  base_title : "Ruby on Rails Tutorial Sample App"
+
+  link:
+      name_book: "Ruby on Rails Tutorial"
+      vendor: "Michael Hartl"
+
+  footer:
+    footer_message_html: "The %{href1} by %{href2}"
+    about: "About"
+    contact: "Contact"
+
+  error_message:
+    error: "error"
+
+  users:
+    delete: "User deleted"
+    users: "Users"
+    log_in: "Log in"
+    log_out: "Log out"
+    new_user: "New user"
+    sign_up: "Sign up"
+    page_for_new_user: "Page for new user"
+    profile: "Profile"
+    setting: "Settings"
+    change: "change"
+    all_users: "All users"
+    profile_updated: "Profile updated"
+    please_login: "Please log in."
+
+  views:
+    hello: "Hello world"
+
+  nav:
+    news: "News"
+    home: "Home"
+    help: "Help"
+
+  remember_me:
+    remember: "Remember me on this computer "
+
+  password:
+    forgot: "Forgot password"
+    mail_reset: "Email sent with password reset instructions"
+    mail_not_found: "Email address not found"
+    reset_password: "Reset password"
+    update: "Update password"
+    confirmation: "Confirmation"
+    success: "Password has been reset."
+    not_empty: "can't be empty"
+    password_expired: "Password reset has expired."
+
+  post:
+    posted: "Posted"
+    ago: "ago."
+    microposts: "Microposts"
+    microposts_created: "Micropost created!"
+    new_microposts: "Compose new micropost..."
+    micropost_feed: "Micropost Feed"
+    micropost_deleted: "Micropost deleted"
+    you_sure: "You sure?"
+    max_picture: "should be less than 5MB"
+    alert_picture: "Maximum file size is 5MB. Please choose a smaller file."
+  follow:
+    following: "following"
+    follower: "followers"
+    follow: "follow"
+    unfollow: "unfollow"
