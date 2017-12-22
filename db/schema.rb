@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< 2f00ec7ddb9fb654d69e2c451eb09aee43f1f045
 ActiveRecord::Schema.define(version: 20171222063836) do
+=======
+ActiveRecord::Schema.define(version: 20171221110625) do
+>>>>>>> Make a basic User model (including secure passwords)
 
   create_table "users", force: :cascade do |t|
     t.string "name"
