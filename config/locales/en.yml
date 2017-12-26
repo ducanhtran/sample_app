@@ -9,6 +9,7 @@ en:
       link1: "Ruby on Rails Tutorial"
       link2: "Michael Hartl"
 
+
   footer:
     footer_message_html: "The %{href1} by %{href2}"
     about: "About"
