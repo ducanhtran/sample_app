@@ -5,11 +5,10 @@ en:
     welcome: "This is the home page for the Ruby on Rails Tutorial sample application."
     base_title : "Ruby on Rails Tutorial Sample App"
 
-    link:
+  link:
       link1: "Ruby on Rails Tutorial"
       link2: "Michael Hartl"
-      help_message_html: "Get help on the Ruby on Rails Tutorial at the %{href1}.
-      To get help on this sample app, see the <b>%{href2}  Tutorial </b>"
+
 
   footer:
     footer_message_html: "The %{href1} by %{href2}"
