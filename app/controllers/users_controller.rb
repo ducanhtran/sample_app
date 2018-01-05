@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :verify_admin, only: :destroy
-  before_action :find, only: [:show, :edit, :destroy]
+  before_action :find, only: [:show, :edit, :destroy, :update]
 
   def find
     @user = User.find_by id: params[:id]
@@ -31,29 +31,6 @@ class UsersController < ApplicationController
       redirect_to root_url
     else
       render :new
-    end
-  end
-
-  def edit;  end
-
-  def update
-    @user = User.find_by(id: params[:id])
-    if @user.update_attributes user_params
-      flash[:success] = t "users.profile_updated"
-      redirect_to @user
-    else
-      render :edit
-    end
-  end
-
-  def destroy
-    @user = User.find_by(id: params[:id]) or redirect_to "/404"
-    if @user.destroy
-      flash[:success] = t "users.delete"
-      redirect_to users_url
-    else
-      flash[:success] = t "users.cant_delete"
-      redirect_to users_url
     end
   end
 
@@ -101,4 +78,5 @@ class UsersController < ApplicationController
     def verify_admin
       redirect_to root_url unless current_user.admin?  
     end
+
 end

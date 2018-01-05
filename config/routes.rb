@@ -1,23 +1,29 @@
 Rails.application.routes.draw do
 
-  root   "static_pages#home"
+  get "password_resets/new"
 
-  get    "/help",    to: "static_pages#help"
+  get "password_resets/edit"
 
-  get    "/about",   to: "static_pages#about"
+  root  "static_pages#home"
 
-  get    "/contact", to: "static_pages#contact"
+  get "/help",    to: "static_pages#help"
 
-  get    "/signup",  to: "users#new"
+  get "/about",   to: "static_pages#about"
 
-  get    "/login",   to: "sessions#new"
+  get "/contact", to: "static_pages#contact"
 
-  post   "/login",   to: "sessions#create"
+  get "/signup",  to: "users#new"
+
+  get "/login",   to: "sessions#new"
+
+  post "/login",   to: "sessions#create"
 
   delete "/logout",  to: "sessions#destroy"
 
   resources :users
 
-  resources :account_activations, only: :edit
+  resources :account_activations, only: [:edit]
+
+  resources :password_resets, only: [:new, :create, :edit, :update]
 
 end
