@@ -1,5 +1,6 @@
 en:
   home:
+    home: "Home"
     welcome_to: "Welcome to the Sample App"
     sample_app: "Sample app"
     welcome: "This is the home page for the Ruby on Rails Tutorial sample application."

@@ -6,6 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem "rails", "~> 5.1.4"
+gem "config"
 gem "jquery"
 gem "jquery-rails"
 gem "bcrypt", "~> 3.1.11"
